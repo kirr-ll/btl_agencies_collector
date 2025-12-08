@@ -9,7 +9,7 @@ from fake_useragent import UserAgent
 
 import logging
 logger = logging.getLogger(__name__)
-from .base_parser import BaseParser
+from src.base_parser import BaseParser
 
 # Настройка логирования
 logging.basicConfig(
@@ -20,6 +20,8 @@ logging.basicConfig(
 
 
 class ListOrgParser(BaseParser):
+    def __init__(self):
+        super().__init__('list_org')
     """Парсер для сайта list-org.com с фильтрацией по требованиям"""
     
     def __init__(self):

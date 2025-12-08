@@ -11,7 +11,6 @@ logger = logging.getLogger(__name__)
 
 from .base_parser import BaseParser
 
-
 class RusprofileParser(BaseParser):
     """Парсер для сайта rusprofile.ru"""
     
