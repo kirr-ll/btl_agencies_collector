@@ -213,3 +213,4 @@ def print_statistics(merged_companies: List[Dict], all_results: Dict[str, List[D
 if __name__ == "__main__":
     main()
 
+    
