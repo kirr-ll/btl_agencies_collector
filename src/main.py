@@ -191,13 +191,13 @@ def print_statistics(merged_companies: List[Dict], all_results: Dict[str, List[D
             print(f"  {segment}: {count} компаний")
         
         # Статистика по выручке
-        revenues = [c['revenue'] for c in merged_companies if c.get('revenue')]
-        if revenues:
-            print(f"\nСтатистика по выручке:")
-            print(f"  Средняя: {sum(revenues)/len(revenues):,.0f} ₽")
-            print(f"  Минимальная: {min(revenues):,.0f} ₽")
-            print(f"  Максимальная: {max(revenues):,.0f} ₽")
-            print(f"  Общая сумма: {sum(revenues):,.0f} ₽")
+        # revenues = [c['revenue'] for c in merged_companies if c.get('revenue')]
+        # if revenues:
+        #     print(f"\nСтатистика по выручке:")
+        #     print(f"  Средняя: {sum(revenues)/len(revenues):,.0f} ₽")
+        #     print(f"  Минимальная: {min(revenues):,.0f} ₽")
+        #     print(f"  Максимальная: {max(revenues):,.0f} ₽")
+        #     print(f"  Общая сумма: {sum(revenues):,.0f} ₽")
         
         # Статистика по источникам в объединенном файле
         sources = {}
@@ -212,3 +212,5 @@ def print_statistics(merged_companies: List[Dict], all_results: Dict[str, List[D
 
 if __name__ == "__main__":
     main()
+
+    
